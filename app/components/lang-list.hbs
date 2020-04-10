@@ -1,0 +1,16 @@
+{{yield}}
+
+<h2>{{@title}}</h2>
+<nav>
+    <ul>
+        {{#each @lang as |Language|}}
+            <li><h2>{{Language}}</h2><input class ="radios" type="radio" name="lang" value="{{Language}}"></li>
+        {{/each}}
+        <button class="buttons" {{on 'click' (fn this.showSelection Language)}}>Select</button>
+        
+       
+    </ul>
+    
+</nav>
+
+
