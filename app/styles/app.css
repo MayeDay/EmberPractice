@@ -6,13 +6,13 @@
 }
 
 body{
-    background-color: cornflowerblue;
+    background-color: rgb(0, 0, 0);
 }
 
 h2{
 
     text-align: center;
-    margin-top: 10%;
+    padding: 1%;
 }
 
 button{
@@ -21,40 +21,99 @@ button{
     
 }
 
-nav{
+.container{
+    width: 80%;
+    height: 685px;
+    background-image: url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.nav_bar ul{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav_bar ul li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+.nav_bar ul li:last-child{
+    border: none;
+    float: right;
+}
+
+.nav_bar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_bar ul li a:hover:not(.active){
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+
+}
+
+
+
+.selections{
     width: 100%;
     height: 300px;
     margin-top: 4%;
 }
 
-nav ul{
+.selections ul{
     list-style: none;
     height: auto;
 }
 
-nav ul li{
+.selections ul li{
     display: inline-block;
-    width: 23%;
+    width: 20%;
     height: 100px;
     padding: 1%;
     margin-left: 5%;
     margin-right: 3%;
-    background-color: cyan;
+    background-color: #333;
     margin-top: 1%;
     margin-bottom: 2%;
+    border: yellow solid 3px;
+    border-radius: 20%;
 
 
 }
 
-nav ul li:hover{
-    background-color: rgb(129, 129, 129);
-    color: rgb(229, 255, 0);
+.selections ul li:hover{
+    background-color: rgb(129, 129, 129) !important;
+    color: rgb(229, 255, 0) !important;
     transition: 1.5s;
 
 }
 
-nav ul li h2{
+
+
+
+.selections ul li h2{
     text-decoration: none;
+}
+
+.title{
+    color: yellow;
 }
 
 
@@ -77,6 +136,7 @@ nav ul li h2{
     padding-bottom: 1%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
+    background-color: #333;
     box-sizing: border-box;
 
 
