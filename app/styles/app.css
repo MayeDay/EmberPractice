@@ -40,6 +40,8 @@ nav ul li{
     margin-left: 5%;
     margin-right: 3%;
     background-color: cyan;
+    margin-top: 1%;
+    margin-bottom: 2%;
 
 
 }
@@ -68,7 +70,7 @@ nav ul li h2{
 .buttons{
 
     margin-left: 44%;
-    margin-top: 5%;
+    margin-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 1%;
