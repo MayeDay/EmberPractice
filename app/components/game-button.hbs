@@ -1,13 +1,11 @@
 
 <div class="container game-page bg-secondary border-sm">
 {{#each choices as |choice|}}
-<div class='game-option rounded-circle'{{on 'click' (fn onPick choice.name)}}  style="background-image: url({{choice.image_path}});">
+<div class='game-option rounded-circle'{{on 'click' (fn onPick choice.name)}}  style="background-image: url({{choice.logo_path}});">
     <h1>{{choice.name}}</h1>
 </div>
 {{/each}}
 </div>
-
-
 
 
 {{yield}}

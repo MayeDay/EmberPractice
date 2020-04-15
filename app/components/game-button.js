@@ -2,21 +2,21 @@ import Component from '@glimmer/component';
 
 export default class GameButtonComponent extends Component {
 
-    name = 'James';
-
+    playerScore = 0;
+    computerScore = 0;
     choices = [{
 
         name:'Java',
         image_path: '/assets/images/mug.png',
-        logo_path: '/assets/images/Java_logo_icon.png',
+        logo_path: '/assets/images/rock0.png',
     },{
         name:'Python',
         image_path: '/assets/images/snake.png',
-        logo_path: '/assets/images/python_logo_icon.png',
+        logo_path: '/assets/images/scissors0.png',
     },{
         name:'C++',
         image_path: '/assets/images/c.png',
-        logo_path: '/assets/images/c++_logo_icon.png',
+        logo_path: '/assets/images/paper.png',
     }];
 
     onPick(name){
@@ -45,6 +45,14 @@ export default class GameButtonComponent extends Component {
        }else if(name == 'C++' && computerChoice == 'Python'){
         result =  'LOSE';
        };
+
+    //    if(result == 'LOSE'){
+    //        this.computerScore = this.computerScore + 1;
+    //    }else if(result == "WIN"){
+    //        this.playerScore = this.playerScore + 1;
+    //    }
+
+    //    alert(`Computer Score: ${computerScore}|| Player Score: ${playerScore}`)
         alert(`Computer has choosen ${computerChoice} so you ${result}`);
 
 

@@ -44,12 +44,23 @@ a:hover{
     background-size: cover;
 }
 
-.color-changer{
 
-    background-color: aquamarine;
-    color: chartreuse;
+.computer{
+    width: 25%;
+    height: inherit;
+    background-color: rgb(51, 48, 48);
+    float: right;
 }
 
+.computer h1{
+    text-align: center;
+    color: yellow;
+}
+
+.computer h3{
+    text-align: center;
+    color: yellow;
+}
 
 .description-box{
 
@@ -63,6 +74,23 @@ a:hover{
 .display-3{
 
     color: yellow;
+}
+
+.dwn-img{
+
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    background-image: url("/assets/images/down-arrow.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.empty{
+    width: 100%;
+    height: 200px;
 }
 
 .footer{
@@ -113,7 +141,9 @@ a:hover{
 
 .game-option h1{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 40%;
+    color: rgb(0, 0, 0);
+  
 }
 
 .game-option:hover{
@@ -141,6 +171,28 @@ a:hover{
     padding-top: 2px;
 }
 
+.home-guide{
+
+    position: absolute;
+    background-color: rgba(230, 230, 250, 0.726);
+    margin: auto;
+    margin-top: -150px;
+    margin-left: 28%;
+    padding: 20px;
+    width: 40%;
+    height: 300px;
+    font-weight: bold;
+}
+
+.home-guide h2{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-guide p{
+    text-align: center;
+}
+
 .home-language{
     margin: auto;
     width: 80%;
@@ -150,6 +202,8 @@ a:hover{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
 
 .img-thumbnail{
 
@@ -185,13 +239,30 @@ a:hover{
 
 }
 
+.player{
+    width: 25%;
+    height: inherit;
+    background-color: rgb(51, 48, 48);
+    float: left;
+}
+
+.player h1{
+    text-align: center;
+    color: yellow;
+}
+
+.player h3{
+    text-align: center;
+    color: yellow;
+}
 .point-board{
 
     width: 100%;
     height: 150px;
     margin-top: 100px;
-    background-color: coral;
+    background-color: rgb(235, 235, 235);
 }
+
 
 .navbar-nav:last-child{
     float: right;
