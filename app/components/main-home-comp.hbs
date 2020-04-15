@@ -1,0 +1,21 @@
+
+{{#each homeObjects as |lang|}}
+<div class='home-language rounded-sm'>
+    <div class="white-space bg-dark">
+        <h1 class='display-5 whitespace-title'>{{lang.name}}</h1>
+        <div class='language-image' style="background-image: url('{{lang.image_path}}');">
+            
+        </div>
+
+    </div>
+    <div class="information-space" style="background-image: url('{{lang.logo_path}}');">
+        <div class="description-box">
+            <h4 class="display-4" style="text-align: center;">{{lang.name}} is {{lang.type}}</h4>
+            <p>{{lang.information}}</p>
+            <button class="btn-light home-buttons"> <LinkTo @route='play'>Let's Play!</LinkTo></button>
+        </div>
+    </div>    
+</div>
+<hr>
+{{/each}}
+{{yield}}
